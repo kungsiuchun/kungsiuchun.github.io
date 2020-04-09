@@ -1,0 +1,100 @@
+{% include "layouts/nav.html" %}
+
+<style>
+ .subcard {
+      width: 30%; 
+      min-width: 310px;
+      padding: 1%;
+      margin: 0.5%;
+      background-color: #eee;
+      box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    }
+    .subcard img {
+      object-fit: cover; 
+      height: 200px; 
+      width: 300px;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    .subcard h1 {
+      font-size: 1.2em;
+      opacity: 0.7;
+    }
+    .subcard-cover {
+      display: none;
+      float: top;
+      position: absolute;
+      background-color: rgba(0,0,0,0.2);
+      z-index: 1;
+      height: 200px;
+      width: 290px;
+    }
+    .subcard-cover p {
+      color: #eee;
+    }
+    .subcard:hover h1 {
+      opacity: 1;
+    }
+    .subcard:hover .subcard-cover{
+      display:block;
+      vertical-align: middle;
+    }
+.card-inner {
+      max-width: 1000px; 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center;
+      padding: 1%;
+      margin: auto;
+ }
+.link {
+      display: inline-block;
+      font-weight: bold;
+      opacity: 0.7;
+}
+.link:hover {
+      opacity: 1;
+ }
+</style>
+
+
+
+<div class="mx-auto card-inner">
+      <p>For a quick summary of my experience,<br><a href="../images/resume.pdf" target="_blank" class="link">look at my resume.</a></p>
+</div>
+
+<div class="card-inner">
+      <a class="subcard" href="https://github.com/gasper94/Dormy" target="_blank">
+        <div class="subcard-cover"><p>Go to Page</p></div>
+        <img style="width: 290px;" src="../images/garactic.jpg">
+        <h1>Dormy - Home Rental Services<br>(JS/Node/AWS)</h1>
+        <!-- <p>Galactic Mail was built by a friend and me, using base code from Tank Game. Avoid asteroids and safely deliver mail to all the moons in the galaxy! Try to beat the high score!</p> -->
+      </a>
+
+      <a class="subcard" href="https://github.com/Codepath-Termproject/GreenTicket" target="_blank">
+        <div class="subcard-cover"><p>Go to Page</p></div>
+        <img style="width: 290px;" src="https://i.imgur.com/ozf1Fpv.png">
+        <h1>GreenTicket - Tickets Exchange<br>(Swift 4)</h1>
+      </a>
+
+      <a class="subcard" href="https://github.com/kungsiuchun/csc690-FinalProject" target="_blank">
+        <div class="subcard-cover"><p>Go to Page</p></div>
+        <img style="width: 290px;" src="https://i.imgur.com/Pn1BCdg.png">
+        <h1>TravelTime! - Spots to Go<br>(Swift 4)</h1>
+        <!-- <p>Tank Game was built by a friend and me. Battle against a friend(or enemy) in local multiplayer! Find powerups and blow up the other player's tank!</p> -->
+      </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% include "layouts/footer.html" %}

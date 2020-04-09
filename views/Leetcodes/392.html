@@ -1,0 +1,87 @@
+{% include "layouts/nav.html" %}
+
+<div class="container">
+
+
+  <!-- Body -->
+  <!-- Page Header -->
+  <header class="intro-header">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <div class="post-heading">
+          <h2><strong>Is Subsequence</strong></h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="row">
+      <!-- Post Main Content -->
+      <div class="post-content col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <h4 id="Code-Example"><a href="#Code-Example" class="headerlink" title="Code Example"></a>Code Example</h4>
+        Given a string s and a string t, check if s is subsequence of t.
+
+You may assume that there is only lower case English letters in both s and t. t is potentially a very long (length ~= 500,000) string, and s is a short string (<=100).
+
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, "ace" is a subsequence of "abcde" while "aec" is not).
+        <figure class="highlight python">
+          <table>
+            <tr>
+              <td class="code">
+              <pre>
+              <span class="line">
+              Class Solution {
+                public boolean isSubsequence(String s, String t) {
+                  if(s.length() == 0) return true;
+                  int s_pointer = 0;
+                  int t_pointer = 0;
+                  while(t_pointer < t.length() ) {
+                    if(t.tocharAt(t_pointer) == s.tocharAt(s_pointer)) {
+                      s_pointer++;
+                      if(s_pointer == s.length()) return true;
+                    }
+                    t_pointer++;
+                  }
+                  return false;
+                }
+              }
+              </span>
+              </pre>
+              </td>
+            </tr>
+          </table>
+        </figure>
+
+        <center>
+          <p><div class="video-container">
+            <iframe src="//www.youtube.com/embed/RIa7SCyKTkQ" frameborder="0" allowfullscreen class="video">
+
+            </iframe>
+          </div>
+        </p>
+        </center>
+
+        <!-- Meta -->
+        <div class="post-date">
+          <hr>
+          2020-03-21
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% include "layouts/footer.html" %}
