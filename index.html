@@ -65,79 +65,6 @@
     });
   </script>
 
-<style>
-    .subcard {
-      width: 30%; 
-      min-width: 310px;
-      padding: 1%;
-      margin: 0.5%;
-      background-color: #eee;
-      box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
-    }
-    .subcard img {
-      object-fit: cover; 
-      height: 200px; 
-      width: 300px;
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-    .subcard h1 {
-      font-size: 1.2em;
-      opacity: 0.7;
-    }
-    .subcard-cover {
-      display: none;
-      float: top;
-      position: absolute;
-      background-color: rgba(0,0,0,0.2);
-      z-index: 1;
-      height: 200px;
-      width: 290px;
-    }
-    .subcard-cover p {
-      color: #eee;
-    }
-    .subcard:hover h1 {
-      opacity: 1;
-    }
-    .subcard:hover .subcard-cover{
-      display:block;
-      vertical-align: middle;
-    }
-.card-inner {
-      max-width: 1000px; 
-      display: flex; 
-      flex-wrap: wrap; 
-      justify-content: center;
-      padding: 1%;
-      margin: auto;
- }
-.link {
-      display: inline-block;
-      font-weight: bold;
-      opacity: 0.7;
-}
-.link:hover {
-      opacity: 1;
- }
-     .arrow-button {
-      text-decoration: none;
-      color: black;
-      opacity: 0.7;
-      font-size: 4vw;
-      text-align: center;
-      display:block;
-      padding: 1vw;
-      margin-top: 3vw;
-    }
-    .arrow-button:hover {opacity: 1;}
-    .card {
-        padding: 1%;
-      box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
-    }
- 
-</style>
 
 
 </head>
@@ -164,10 +91,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="#experience">Experience</a>
             </li>
-<!-- 
+
             <li class="nav-item">
-                <a class="nav-link" href="#catagoery">Categories</a>
-            </li> -->
+                <a class="nav-link" href="#catagoery">LeetCodes</a>
+            </li>
         </ul>
         <hr class="hidden-md-up">
     </div>
@@ -241,13 +168,13 @@ aspects that go into it — programming, gameplay, art, and sound design.</p>
 <a id="experience"></a>
 <div class="card">
     <h1 class="site-heading ">Experiences</h1>
-<div class="zone blue grid-wrapper">
+<div class="zone blue grid-wrapper mb-4">
     <div class=" bg-light mx-auto" alt="Car" style="width: 100%" class="card border-primary mb-3" style="max-width: 18rem;">
         <div class="container text-center text-primary">
           <div class="mx-auto">
-            <img class="card__images" class="bg-light mb-3" alt="Car" style="width: 400px;" style="height: 300px" src="../images/ina.png" >
+            <img class="card__images mb-3" class="bg-light mb-3" alt="Car" style="width: 400px;" style="height: 300px" src="../images/ina.png" >
             <div class="card" style="border: none;">
-            <div class="card-Title">
+            <div class=" ard-Title">
               In-Store Shopper
             <div class="mt-3 text-left ml-2">
                 <li>
@@ -272,7 +199,7 @@ aspects that go into it — programming, gameplay, art, and sound design.</p>
          <div class="container text-center text-primary">
            <div class="mx-auto">
              <img class="card__images" class="bg-light mb-3" alt="Car" style="width: 400px;" style="height: 300px" src="../images/logo.png" >
-             <div class="card" style="border: none;">
+             <div class="card mt-3" style="border: none;">
              <div class="card-Title">
                Data Analytics Apprentice - Cohort 93
              <div class="mt-3 text-left ml-2">
@@ -299,40 +226,36 @@ aspects that go into it — programming, gameplay, art, and sound design.</p>
 
 
 <!---catagoery-->
-<!-- <a id = "catagoery"></a>
-<div class="card">
- <article>
-    <h1 class="site-heading ">Categories</h1>
-  
-    <div class="archive">
-  
-      <div class="container">
-        <h3 class="post-title">
-          <i class="icon-categories"></i>
-            <a href="life.html" title="Life" rel="3">Life</a>
-        </h3>
-      </div>
-  
-      <div class="container">
-        <h3 class="post-title">
-          <i class="icon-categories"></i>
-            <a href="/categories/LeetCodes/" title="Machine Learning" rel="7">LeetCodes</a>
-        </h3>
-  
-  
-  
-      </div>
-  
-      <div class="container">
-        <h3 class="post-title">
-          <i class="icon-categories"></i>
-            <a href="/categories/Uncategorized/" title="Uncategorized" rel="1">Uncategorized</a>
-        </h3>
-  
-      </div>
-  
-    </div>
-  </article>
+<a id="catagoery"></a>
+<article>
+  <h1 class="site-heading mt-4">LeetCodes</h1>
+  <div class="row mt-4" >
+      <!-- Post Main Content -->
+      <div class="post-content col-lg-8 offset-lg-2 col-md-10 ">
+        <div class="row">
+        <ul class="col-md-3 list-group list-group-horizontal">
+           <li class=" list-group-item"><a href="Leetcodes/392.html">Is Subsequence | No.392</a></li>
+           <li class=" list-group-item"><a href="Leetcodes/1266.html">Minimum Time | No.1266</a></li>
+           <li class=" list-group-item"><a href="">Is Subsequence | No.392</a></li>
+         </ul>
+         <ul class="col-md-3 list-group list-group-horizontal">
+           <li class=" list-group-item"><a href="Leetcodes/124.html">Binary Tree Maximum Path Sum | No.124</a></li>
+           <li class=" list-group-item"><a href="Leetcodes/1299.html">Replace Elements | No.1299</a></li>
+           <li class=" list-group-item"><a href="">Is Subsequence | No.392</a></li>
+          </ul>
+          <ul class="col-md-3 list-group list-group-horizontal">
+            <li class=" list-group-item"><a href="../Leetcodes/701.html">Insert into a Binary Search Tree | No.701</a></li>
+            <li class=" list-group-item"><a href="">Is Subsequence | No.392</a></li>
+            <li class=" list-group-item"><a href="">Is Subsequence | No.392</a></li>
+           </ul>
+           <ul class="col-md-3 list-group list-group-horizontal">
+             <li class=" list-group-item"><a href="../Leetcodes/1290.html">Convert Binary Number | No.1290</a></li>
+             <li class=" list-group-item"><a href="">Is Subsequence | No.392</a></li>
+             <li class=" list-group-item"><a href="">Is Subsequence | No.392</a></li>
+            </ul>
+
+  </div>
+</article>
 </div> -->
 
 

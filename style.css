@@ -322,3 +322,74 @@ table th {
 table td:nth-child(1) {
   white-space: nowrap;
 }
+
+.subcard {
+  width: 30%; 
+  min-width: 310px;
+  padding: 1%;
+  margin: 0.5%;
+  background-color: #eee;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+}
+.subcard img {
+  object-fit: cover; 
+  height: 200px; 
+  width: 300px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.subcard h1 {
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+.subcard-cover {
+  display: none;
+  float: top;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 1;
+  height: 200px;
+  width: 290px;
+}
+.subcard-cover p {
+  color: #eee;
+}
+.subcard:hover h1 {
+  opacity: 1;
+}
+.subcard:hover .subcard-cover{
+  display:block;
+  vertical-align: middle;
+}
+.card-inner {
+  max-width: 1000px; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  padding: 1%;
+  margin: auto;
+}
+.link {
+  display: inline-block;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.link:hover {
+  opacity: 1;
+}
+ .arrow-button {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+  font-size: 4vw;
+  text-align: center;
+  display:block;
+  padding: 1vw;
+  margin-top: 3vw;
+}
+.arrow-button:hover {opacity: 1;}
+.card {
+    padding: 1%;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+}
